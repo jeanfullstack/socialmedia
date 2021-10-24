@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgShare</title>
+    {{!-- FONT AWESOME --}}
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+    integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    {{!-- BOOTSTRAP 4 --}}
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    {{!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/lux/bootstrap.min.css"> --}}
+    {{!-- CUSTOM CSS --}}
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark">
+
+        <div class="container">
+
+
+            <a href="/" class="navbar-brand">
+
+              <img src="/public/img/imgshare-logo.png" alt="imgShare">
+
+            </a>
+
+
+        </div>
+
+
+
+    </nav>
+
+
+    <div class="container p-4"> {{!-- Contenido centrado --}} {{!-- p-4: Separacion del menu de navegacion con el formulario --}}
+
+        <div class="row"> {{!-- Creacion de la fila --}}
+
+
+            <div class="col-md-8"> {{!-- Creacion de la columna --}}
+
+                {{{ body }}}
+
+            </div>
+            
+
+            <div class="col-md-4"> {{!-- Creacion de la columna --}}
+
+                {{> stats  }}
+
+                {{> popular }}
+
+                {{> comments }} 
+
+            </div>
+
+
+        </div>
+
+        
+
+    </div>
+
+
+
+
+
+    {{!-- SCRIPTS --}}
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    {{!-- CUSTOM CODE --}}
+    <script src="/public/js/scripts.js"></script>
+    
+    
+</body>
+</html>
